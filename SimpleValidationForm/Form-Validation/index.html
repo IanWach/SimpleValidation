@@ -23,16 +23,16 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 <body>
   <header>
   <!--- Navbar --->
-    <nav class="navbar navbar-expand-lg" style="padding: 25px 0px; width: 100%";>
+    <nav  class="navbar navbar-expand-lg" style="padding: 25px 0px; width: 100%";>
 
-        <div class="container-fluid">
+        <div class="container-fluid" >
             <a class="navbar-brand text-white" href="#"><i class="fa fa-laptop fa-lg mr-1"></i><img src="images/Logo2.svg" alt="Peep Logo" /></a>
-            <button class="navbar-toggler"> <!--  type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
-                 --><span class="navbar-toggler-icon"></span><i style="font-size: 40px;" class="fa mb-5 fa-angle-down"></i> </span>
+            <button  class="navbar-toggler"> <!--  type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
+                 --><span style="border: none;" class="navbar-toggler-icon"></span><i onmousedown="hidenav()"  onclick="shownav()" style="font-size: 70px;" class="fa mb-5 fa-angle-down"></i> </span>
             </button>
 
-        <div class="collapse navbar-collapse" id="nvbCollapse">
-            <ul class="navbar-nav ml-auto">
+        <div id = "nav-click" class="collapse navbar-collapse" id="nvbCollapse">
+            <ul  class="navbar-nav ml-auto">
                 <li class="nav-item pl-3">
                     <a class="nav-link" href="#home"><i class="fa fa-home fa-fw mr-5"></i><strong>Home </strong></a>
                 </li>
@@ -72,7 +72,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
   </header>
 
         <div class="row">
-            <div id="home"class ="big-banner">
+            <div onmouseover="hidenav()"  ondblclick="hidenav()" id="home"class ="big-banner">
                     <div style="position:absolute;
                     top:0;
                     right:0;
@@ -111,10 +111,9 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
             </div>    
         </section>
         
-        <section id="how" class="container-fluid works-section" style=" background-color: rgb(250, 182, 193); 
-        padding-bottom: 70px ;">
+        <section id="how" class="container-fluid works-section" style=" padding-bottom: 70px ;">
        
-            <h2 class="how-works-h2" style="font-size: 55px; padding-top:20px ; padding-left: 15px; color: blueviolet;">How It Works</h2>
+            <h2 class="how-works-h2" style="font-size: 55px; padding-top:20px ; padding-left: 15px; color: rgb(255, 255, 255);">How It Works</h2>
                 
             <div  class="row mt-3">
                   <div class="col-sm mt-3">
@@ -180,8 +179,11 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
                 </div>
             </div>
         </section>
-       <section id="clients" style="background-color: rgb(250, 145, 245);"><h2 style =" color:darkblue; padding: 5px 0px 10px 50px ;font-size: 3rem; margin: 0;">Our Clients </h2> </br> <small style="font-weight: bold; font-size: 2rem; color: rgba(0, 0, 139, 0.555); padding: 0px 0px 40px 60px; ">Some of our Clients</small></section>
-      <section>
+       
+      <section class="carousel-section">
+       
+        <section id="clients" style=""><h2 style =" color:rgb(1, 18, 200); padding: 5px 0px 10px 50px ;font-size: 3.5rem; margin: 0;">Our Clients </h2> </br> <small style="font-weight: bold; font-size: 2rem; color: rgba(0, 0, 139, 0.555); padding: 0px 0px 40px 60px; ">Some of our Clients</small></section>
+       
         <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
             <!-- Indicators/dots -->
@@ -280,7 +282,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
               <div class="col">
                 <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('images/Sales Agent.jpg');">
                   <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-success">Become a Peep Agent to our Users</h2>
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-suc">Become a Peep Agent to our Users</h2>
                     <ul class="d-flex list-unstyled mt-auto">
                       <li class="me-auto">
                         <img src="images/Banner/Travel Landing Page (Community)@3x.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
@@ -301,7 +303,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
               <div class="col">
                 <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('images/Peep Users.jpg');">
                   <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-success">Peep Users - For Buying Airtime, Getting advance, Statements etc.</h2>
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-suc">Peep Users - <h4 class="text-suc"> Buying Airtime, Getting advance, Statements etc.</h4 class="text-suc"></h2>
                     <ul class="d-flex list-unstyled mt-auto">
                       <li class="me-auto">
                         <img src="images/Banner/Travel Landing Page (Community)@2x.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-pink">
@@ -322,7 +324,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
               <div class="col">
                 <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('images/Peep\ Clients.jpg');">
                   <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-success">Peep Clients - This includes all employers using peep to offer services to the Employees/Workers </h2>
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-suc">Peep Clients - <h4 class="text-suc"> This includes all employers using peep to offer services to the Employees/Workers </h4 class="text-suc"> </h2>
                     <ul class="d-flex list-unstyled mt-auto">
                       <li class="me-auto">
                         <img src="images/Banner/Travel Landing Page (Community)@2x.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
@@ -342,7 +344,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
             </div>
           </div>
 
-        <footer id="footer" class="row" style="background-color:rgba(0, 204, 255, 0.89); height: 100%">
+        <footer id="footer" class="row" style="background-color:#87B0CC; height: 100%">
             <div class ="footer-peep col-sm-5">
                 <!-- <h1> Peep Technologies</h1> -->
                 <img class="footer-peep-img" src="images/Banner/PEEP TECHNOLOGIES.svg">

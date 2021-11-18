@@ -34,8 +34,8 @@ body{
 .fa-lg {
   font-size: 2em;
 }
-.navbar-toggler{
-background-color: aqua;
+.navbar-toggler , .navbar-toggler:focus{
+border: none !important;
 }
 .li-display{
   display: none;
@@ -99,7 +99,7 @@ background-color: aqua;
 }
 
 .about-img{
-  flex-basis: 50%;
+  flex-basis: 30%;
 }
 .img-resp{
   height: 0; 
@@ -110,7 +110,7 @@ background-color: aqua;
 
 .about-par{
   background-color: rgb(78, 6, 136); 
-  flex-basis: 50%;
+  flex-basis: 70%;
 }
 
 .about-h2{
@@ -122,7 +122,7 @@ background-color: aqua;
   margin:10px 0px 50px 30px; 
   font-size: 22px; 
   padding:0px 70px 10px 20px; 
-  color: rgba(253, 0, 156, 0.808);
+  color: rgba(243, 255, 80, 0.767)
 }
 .hidden{
  display: none;
@@ -134,9 +134,14 @@ background-color: aqua;
   display: none;
 }
 /*  How it Works */
-/* .works-section{
+ .works-section{
+
+  background-image: linear-gradient( #4E0688, #AC0079, #E53061, #FF774B,#FFB949 );
  
-} */
+} 
+#clients{
+  background-image:linear-gradient( #FFB949,#FF774B);
+}
 .how-works-h2{
   font-size: 55px;
 }
@@ -323,6 +328,9 @@ button {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.1s ease;
 }
+.text-suc{
+  color: #9600f3!important;
+}
 
 button:hover {
   opacity: 0.8;
@@ -485,6 +493,19 @@ padding-left: 55px;
   }
   .unhidden{
     display: none;
+  }
+  .works-section .row{
+    display: block;
+    transition: calc(50%, -50%);
+  }
+  .card{
+    display: block;
+    /* transition: calc(50%, -50%); */
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .how-works-h2{
+    font-size: 40px !important;
   }
 }
 @media (max-width: 425px) {
